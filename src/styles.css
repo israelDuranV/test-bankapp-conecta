@@ -110,3 +110,11 @@ button.btn-success {
 .monto-abono {
     color: green;
 }
+
+.visible {
+    display: 'block';
+}
+
+.novisible {
+    display: none;
+}

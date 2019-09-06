@@ -83,38 +83,42 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <input type="number" class="form-control" aria-describedby="numeroTarjeta" placeholder="Número de tarjeta">
+                        <input type="number" class="form-control" aria-describedby="numeroTarjeta" placeholder="Número de tarjeta" #numeroTarjeta>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-6">
-                            <input type="number" class="form-control" aria-describedby="cuenta" placeholder="Cuenta">
+                            <input type="number" class="form-control" aria-describedby="cuenta" placeholder="Cuenta" #cuenta>
                         </div>
                         <div class="col-md-6">
-                            <input type="number" class="form-control" aria-describedby="issuer" placeholder="Issuer">
+                            <input type="number" class="form-control" aria-describedby="issuer" placeholder="Issuer" #issuer>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="nombreTarjeta" placeholder="Nombre tarjeta">
+                        <input type="text" class="form-control" aria-describedby="nombreTarjeta" placeholder="Nombre tarjeta" #nombreTarjeta>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="nombreTarjeta" placeholder="Nombre tarjeta">
+                        <input type="text" class="form-control" aria-describedby="marca" placeholder="Marca" #marca>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="marca" placeholder="Marca">
+                        <input type="text" class="form-control" aria-describedby="estatus" placeholder="Estatus" #estatus>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="estatus" placeholder="Estatus">
+                        <input type="text" class="form-control" aria-describedby="saldo" placeholder="Saldo" #saldo>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="saldo" placeholder="Saldo">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" aria-describedby="tipoCuenta" placeholder="Tipo de cuenta">
+                        <input type="text" class="form-control" aria-describedby="tipoCuenta" placeholder="Tipo de cuenta" #tipoCuenta>
                     </div>
                 </div>
                 <div class="modal-footer row justify-content-center">
-                    <button type="button" class="btn btn-secondary btn-cancelar col-md-4" data-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-success btn-agregar col-md-4">Agregar Tarjeta</button>
+                    <button type="button" class="btn btn-secondary btn-cancelar col-md-4" (click)="cancelarForm()" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success btn-agregar col-md-4" (click)="sendForm(numeroTarjeta.value, cuenta.value,issuer.value,nombreTarjeta.value,marca.value,estatus.value,saldo.value,tipoCuenta.value)">Agregar Tarjeta</button>
+                </div>
+                <div class="alert alert-primary m-4 {{visible}}" role="alert">
+                    <h4>Json</h4>
+                    <pre>
+                            {{ mijson | json }}
+                    </pre>
+
                 </div>
             </div>
         </div>
