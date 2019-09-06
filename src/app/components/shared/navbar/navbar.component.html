@@ -17,12 +17,12 @@
             </li>
         </ul>
         <ul class="navbar-nav my-2 my-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item active" *ngFor="let cuenta of cuentas">
                 <a class="nav-link" href="#">
-                    Israel Duran
+                    {{cuenta.nombre}}
                     <br>
                     <span class="little-gray">
-                            último inicio 6/09/2019
+                            último inicio {{cuenta.ultima_sesion}}
                     </span>
 
                 </a>

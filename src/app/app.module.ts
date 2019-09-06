@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import {CapitalizadoPipe} from '../pipes/capitalizado.pipe';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,8 @@ import { EnviardineroComponent } from './components/enviardinero/enviardinero.co
     HomeComponent,
     NavbarComponent,
     MiscuentasComponent,
-    EnviardineroComponent
+    EnviardineroComponent,
+    CapitalizadoPipe
   ],
   imports: [
     AngularFontAwesomeModule,
