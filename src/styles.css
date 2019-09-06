@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+
+.little-gray,
+.big-gray {
+    vertical-align: middle;
+    color: #929190
+}
+
+.little-gray {
+    font-size: 11px;
+}
+
+.big-gray {
+    font-size: 16px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #07be92;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.saldos {
+    background-color: #01455c;
+}
+
+.saldos .cuadros {
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+}
+
+.saldos .cuadros .cuadro-texto {
+    font-size: 12px;
+    color: #07be92;
+}
+
+.cuenta-aside,
+.cuenta-aside-active {
+    background-color: #07be92;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 0px solid #000000;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+}
+
+.cuenta-aside-active {
+    background-color: #07be92;
+}
+
+.cuenta-aside {
+    background-color: #a2e2d2;
+}
+
+table {
+    font-size: 15px;
+}
+
+.add-target {
+    height: 50px;
+    border-style: dashed;
+    vertical-align: middle;
+}
+
+footer {
+    width: 100%;
+}
