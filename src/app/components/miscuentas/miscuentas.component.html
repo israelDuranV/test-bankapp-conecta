@@ -58,7 +58,7 @@
                 <span class="float-right">$16,000</span>
             </div>
         </div>
-        <button type="button" class="btn btn-outline-info btn-block add-target row mt-3">
+        <button type="button" class="btn btn-outline-info btn-block add-target row mt-3" data-toggle="modal" data-target="#exampleModal">
             AGREGAR TARJETA
             <img src="assets/img/button-add.png" width="35" height="35" class="float-right">
         </button>
@@ -107,6 +107,50 @@
             </tbody>
         </table>
     </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="assets/img/bankapp1.jpg" width="110" height="35" class="float-left"><span class="float-right">Agregar Tarjeta</span>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="number" class="form-control" aria-describedby="numeroTarjeta" placeholder="Número de tarjeta">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" aria-describedby="cuenta" placeholder="Cuenta">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="number" class="form-control" aria-describedby="issuer" placeholder="Issuer">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" aria-describedby="nombreTarjeta" placeholder="Nombre tarjeta">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" aria-describedby="nombreTarjeta" placeholder="Nombre tarjeta">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" aria-describedby="marca" placeholder="Marca">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" aria-describedby="estatus" placeholder="Estatus">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" aria-describedby="saldo" placeholder="Saldo">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" aria-describedby="tipoCuenta" placeholder="Tipo de cuenta">
+                    </div>
+                </div>
+                <div class="modal-footer row justify-content-center">
+                    <button type="button" class="btn btn-secondary btn-cancelar col-md-4" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success btn-agregar col-md-4">Agregar Tarjeta</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="row">
         <div class="col-md-8 little-gray" style="position:relative">
             Banckup
